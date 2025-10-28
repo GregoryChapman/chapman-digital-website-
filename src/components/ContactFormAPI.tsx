@@ -1,10 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import Button from './Button';
 
-export default function ContactForm() {
+export default function ContactFormAPI() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,6 +12,7 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -24,36 +24,25 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
     
     try {
-      // EmailJS configuration - you'll need to replace these with your actual values
-      const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-      const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
-      
-      // Prepare template parameters
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        company: formData.company,
-        message: formData.message,
-        to_email: 'contact@chapmandigitalservices.com'
-      };
-      
-      // Send email using EmailJS
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
-      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setIsSubmitted(true);
     } catch (error) {
       console.error('Error sending email:', error);
-      
-      // Fallback to mailto if EmailJS fails
-      const subject = `Contact Form Submission from ${formData.name}`;
-      const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
-      const mailtoUrl = `mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoUrl;
-      
-      setIsSubmitted(true);
+      setError('Failed to send message. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);
     }
@@ -75,6 +64,12 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p className="text-red-700">{error}</p>
+        </div>
+      )}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-2">
