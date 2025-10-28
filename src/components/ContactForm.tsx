@@ -24,11 +24,26 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      // Create mailto link with form data
+      const subject = `Contact Form Submission from ${formData.name}`;
+      const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+      
+      // Create mailto URL
+      const mailtoUrl = `mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open email client
+      window.location.href = mailtoUrl;
+      
+      // Simulate form submission delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -39,8 +54,8 @@ export default function ContactForm() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-lg font-semibold text-green-800 mb-2">Message Sent!</h3>
-        <p className="text-green-700">Thank you for reaching out. We&apos;ll get back to you within 24 hours.</p>
+        <h3 className="text-lg font-semibold text-green-800 mb-2">Email Client Opened!</h3>
+        <p className="text-green-700">Your email client should have opened with a pre-filled message to contact@chapmandigitalservices.com. We&apos;ll get back to you within 24 hours.</p>
       </div>
     );
   }

@@ -49,7 +49,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Email</h3>
-              <p className="text-neutral-600">hello@chapmandigital.com</p>
+              <p className="text-neutral-600">contact@chapmandigitalservices.com</p>
             </div>
 
             <div className="text-center">
@@ -59,7 +59,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Phone</h3>
-              <p className="text-neutral-600">+1 (555) 123-4567</p>
+              <p className="text-neutral-600">(905) 999-8216</p>
             </div>
 
             <div className="text-center">
@@ -70,7 +70,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Location</h3>
-              <p className="text-neutral-600">San Francisco, CA</p>
+              <p className="text-neutral-600">Toronto, ON</p>
             </div>
           </div>
         </Container>
