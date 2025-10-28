@@ -26,10 +26,10 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - you'll need to replace these with your actual values
-      const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-      const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+      // EmailJS configuration
+      const serviceId = 'service_xmznfb8'; // Your EmailJS service ID
+      const templateId = 'template_ttqge1e'; // Your EmailJS template ID
+      const publicKey = 'y16J4cJHetLGE83au'; // Your EmailJS public key
       
       // Prepare template parameters
       const templateParams = {
