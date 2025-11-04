@@ -94,7 +94,7 @@ export default function Home() {
 
 
       {/* CTA Section */}
-      <Section className="py-20 bg-gradient-to-br from-primary-600 to-secondary-600">
+      <Section className="py-20 bg-gradient-to-br from-blue-600 to-cyan-600">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-6">
