@@ -13,6 +13,7 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -24,6 +25,7 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
     
     try {
       // EmailJS configuration
@@ -35,26 +37,25 @@ export default function ContactForm() {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
-        company: formData.company,
+        company: formData.company || 'Not provided',
         message: formData.message,
         to_email: 'contact@chapmandigitalservices.com'
       };
       
       // Send email using EmailJS
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
-      setIsSubmitted(true);
+      if (response.status === 200) {
+        setIsSubmitted(true);
+      } else {
+        throw new Error('Failed to send email');
+      }
     } catch (error) {
       console.error('Error sending email:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+      setError(`Failed to send message: ${errorMessage}. Please try again or contact us directly at contact@chapmandigitalservices.com`);
       
-      // Fallback to mailto if EmailJS fails
-      const subject = `Contact Form Submission from ${formData.name}`;
-      const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
-      const mailtoUrl = `mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoUrl;
-      
-      setIsSubmitted(true);
-    } finally {
+      // Don't show success message on error
       setIsSubmitting(false);
     }
   };
@@ -75,6 +76,12 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p className="text-red-700 text-sm">{error}</p>
+        </div>
+      )}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-2">
