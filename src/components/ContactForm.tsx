@@ -28,10 +28,13 @@ export default function ContactForm() {
     setError('');
     
     try {
+      console.log('Form submission started');
+      console.log('Form data:', formData);
+      
       // EmailJS configuration
-      const serviceId = 'service_xmznfb8'; // Your EmailJS service ID
-      const templateId = 'template_ttqge1e'; // Your EmailJS template ID
-      const publicKey = 'y16J4cJHetLGE83au'; // Your EmailJS public key
+      const serviceId = 'service_xmznfb8';
+      const templateId = 'template_ttqge1e';
+      const publicKey = 'y16J4cJHetLGE83au';
       
       // Prepare template parameters
       const templateParams = {
@@ -42,21 +45,52 @@ export default function ContactForm() {
         to_email: 'contact@chapmandigitalservices.com'
       };
       
+      console.log('Sending email via EmailJS with params:', templateParams);
+      
       // Send email using EmailJS
       const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
-      if (response.status === 200) {
+      console.log('EmailJS response:', response);
+      
+      if (response.status === 200 || response.text === 'OK') {
+        console.log('Email sent successfully!');
         setIsSubmitted(true);
+        setIsSubmitting(false);
       } else {
-        throw new Error('Failed to send email');
+        throw new Error(`Unexpected response: ${response.status}`);
       }
     } catch (error) {
-      console.error('Error sending email:', error);
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-      setError(`Failed to send message: ${errorMessage}. Please try again or contact us directly at contact@chapmandigitalservices.com`);
+      console.error('EmailJS Error Details:', error);
       
-      // Don't show success message on error
-      setIsSubmitting(false);
+      // Try API route as fallback
+      try {
+        console.log('Attempting fallback to API route...');
+        const apiResponse = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+        
+        if (apiResponse.ok) {
+          console.log('Email sent via API route successfully!');
+          setIsSubmitted(true);
+          setIsSubmitting(false);
+          return;
+        } else {
+          const apiError = await apiResponse.json();
+          throw new Error(apiError.error || 'API route failed');
+        }
+      } catch (apiError) {
+        console.error('API route also failed:', apiError);
+        
+        // Final fallback: show error with helpful message
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+        setError(`Failed to send message: ${errorMessage}. Please email us directly at contact@chapmandigitalservices.com or try again later.`);
+        
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -78,7 +112,13 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       {error && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-          <p className="text-red-700 text-sm">{error}</p>
+          <p className="text-red-700 text-sm mb-2">{error}</p>
+          <a 
+            href={`mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
+            className="text-blue-600 hover:text-blue-800 underline text-sm"
+          >
+            Or click here to email us directly
+          </a>
         </div>
       )}
       
