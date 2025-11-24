@@ -117,51 +117,6 @@ export default function Projects() {
               </div>
             </Card>
 
-            {/* Salesforce Integration Platform */}
-            <Card hover className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
-                    Salesforce
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    Integration
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    Automation
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                  Salesforce Integration Platform
-                </h3>
-                <p className="text-neutral-600 mb-4">
-                  Built comprehensive integration platform connecting Salesforce with 
-                  legacy systems, reducing manual data entry by 75%.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Reduced manual data entry by 75%
-                  </div>
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Seamless legacy system integration
-                  </div>
-                </div>
-                <Button href="/projects/salesforce-integration" variant="outline" size="sm">
-                  View Details
-                </Button>
-              </div>
-            </Card>
           </div>
         </Container>
       </Section>

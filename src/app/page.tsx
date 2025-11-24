@@ -10,12 +10,12 @@ export default function Home() {
       <Section className="py-20 relative overflow-hidden">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50"
           style={{
             backgroundImage: 'url(/images/whistler-blackcomb-and-valley.jpg)',
           }}
         />
-        <div className="absolute inset-0 z-0 bg-white/60" />
+        <div className="absolute inset-0 z-0 bg-white/40" />
         <Container className="relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 mb-6">

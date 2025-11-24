@@ -7,11 +7,11 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="py-20">
+      <Section className="py-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Our Services
+              Our <span className="text-gradient">Services</span>
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
               We combine enterprise-level expertise with agile, design-driven execution 
@@ -26,9 +26,9 @@ export default function Services() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* AI Consulting */}
-            <Card hover className="p-8">
-              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Card hover className="p-8 border-l-4 border-l-blue-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8M8 11h8M8 15h4" />
                 </svg>
@@ -66,9 +66,9 @@ export default function Services() {
             </Card>
 
             {/* Front-End Modernization */}
-            <Card hover className="p-8">
-              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Card hover className="p-8 border-l-4 border-l-cyan-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
@@ -105,9 +105,9 @@ export default function Services() {
             </Card>
 
             {/* Digital Transformation */}
-            <Card hover className="p-8">
-              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Card hover className="p-8 border-l-4 border-l-teal-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>

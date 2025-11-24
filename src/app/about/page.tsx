@@ -6,11 +6,11 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="py-20">
+      <Section className="py-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              About Chapman Digital
+              About <span className="text-gradient">Chapman Digital</span>
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
               A boutique consultancy helping teams transform legacy systems, improve UX, 
@@ -54,9 +54,9 @@ export default function About() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-primary-600">1</span>
+            <Card hover className="text-center border-l-4 border-l-blue-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-white">1</span>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-4">Understand</h3>
               <p className="text-neutral-600">
@@ -65,9 +65,9 @@ export default function About() {
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-primary-600">2</span>
+            <Card hover className="text-center border-l-4 border-l-cyan-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-white">2</span>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-4">Design</h3>
               <p className="text-neutral-600">
@@ -76,9 +76,9 @@ export default function About() {
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-primary-600">3</span>
+            <Card hover className="text-center border-l-4 border-l-teal-500">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-4">Deliver</h3>
               <p className="text-neutral-600">
