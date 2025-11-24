@@ -9,10 +9,9 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <img
-                src="/images/chapman-digital-logo.png"
+                src="/images/chapman-digital-logo-white.png"
                 alt="Chapman Digital Services"
                 className="h-14 w-auto"
-                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <p className="text-neutral-300 mb-4 max-w-md">
