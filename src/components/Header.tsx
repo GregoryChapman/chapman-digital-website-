@@ -9,13 +9,13 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
               src="/images/chapman-digital-logo.png"
               alt="Chapman Digital Services"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

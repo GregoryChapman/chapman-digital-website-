@@ -11,7 +11,8 @@ export default function Footer() {
               <img
                 src="/images/chapman-digital-logo.png"
                 alt="Chapman Digital Services"
-                className="h-12 w-auto"
+                className="h-14 w-auto"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <p className="text-neutral-300 mb-4 max-w-md">
