@@ -35,14 +35,24 @@ export default function ContactFormAPI() {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        throw new Error('Failed to send message');
+        throw new Error(data.error || 'Failed to send message');
       }
 
       setIsSubmitted(true);
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        message: ''
+      });
     } catch (error) {
       console.error('Error sending email:', error);
-      setError('Failed to send message. Please try again or contact us directly.');
+      const errorMessage = error instanceof Error ? error.message : 'Failed to send message. Please try again or contact us directly.';
+      setError(errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -66,7 +76,13 @@ export default function ContactFormAPI() {
     <form onSubmit={handleSubmit} className="space-y-6">
       {error && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-          <p className="text-red-700">{error}</p>
+          <p className="text-red-700 text-sm mb-2">{error}</p>
+          <a 
+            href={`mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
+            className="text-blue-600 hover:text-blue-800 underline text-sm"
+          >
+            Or click here to email us directly
+          </a>
         </div>
       )}
       
