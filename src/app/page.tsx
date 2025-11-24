@@ -8,14 +8,31 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <Section className="py-20 relative overflow-hidden">
-        {/* Background Image */}
+        {/* Creative Background Design */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50" />
+        
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style={{ animationDelay: '2s' }} />
+        
+        {/* Geometric shapes */}
+        <div className="absolute top-20 right-20 w-64 h-64 border-4 border-blue-200/30 rotate-45 rounded-lg" />
+        <div className="absolute bottom-20 left-20 w-48 h-48 border-4 border-cyan-200/30 rotate-12 rounded-full" />
+        <div className="absolute top-1/2 right-1/4 w-32 h-32 border-4 border-teal-200/30 -rotate-12 rounded-lg" />
+        
+        {/* Grid pattern overlay */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50"
+          className="absolute inset-0 z-0 opacity-5"
           style={{
-            backgroundImage: 'url(/images/whistler-blackcomb-and-valley.jpg)',
+            backgroundImage: `
+              linear-gradient(to right, #000 1px, transparent 1px),
+              linear-gradient(to bottom, #000 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px'
           }}
         />
-        <div className="absolute inset-0 z-0 bg-white/40" />
+        
         <Container className="relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 mb-6">
