@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,10 +9,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-4">
-              <img
+              <Image
                 src="/images/chapman-digital-logo-white.png"
                 alt="Chapman Digital Services"
+                width={200}
+                height={56}
                 className="h-14 w-auto"
+                priority
               />
             </Link>
             <p className="text-neutral-300 mb-4 max-w-md">
