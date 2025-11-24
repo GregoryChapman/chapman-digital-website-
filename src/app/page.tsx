@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 mb-6">
               Where <span className="text-gradient">AI meets design</span>
             </h1>
-            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+            <p className="text-xl text-neutral-800 font-medium mb-8 leading-relaxed drop-shadow-sm">
               Empowering organizations to modernize through AI, intelligent front-end design, 
               and streamlined digital experiences.
             </p>
