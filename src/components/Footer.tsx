@@ -7,15 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-500 rounded-lg flex items-center justify-center shadow-sm">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-white leading-tight">Chapman</span>
-                <span className="text-lg font-bold text-white leading-tight">Digital</span>
-              </div>
-            </div>
+            <Link href="/" className="inline-block mb-4">
+              <img
+                src="/images/chapman-digital-logo.png"
+                alt="Chapman Digital Services"
+                className="h-12 w-auto"
+              />
+            </Link>
             <p className="text-neutral-300 mb-4 max-w-md">
               Empowering organizations to modernize through AI, intelligent front-end design, 
               and streamlined digital experiences.

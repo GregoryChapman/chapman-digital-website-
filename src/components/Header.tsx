@@ -14,8 +14,8 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <img
               src="/images/chapman-digital-logo.png"
-              alt="Chapman Digital Logo"
-              className="h-10 w-auto"
+              alt="Chapman Digital Services"
+              className="h-12 w-auto"
             />
           </Link>
 
