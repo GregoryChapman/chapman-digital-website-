@@ -56,11 +56,6 @@ export default function Footer() {
                   Digital Transformation
                 </Link>
               </li>
-              <li>
-                <Link href="/services" className="text-neutral-300 hover:text-primary-400 transition-colors">
-                  Salesforce Enablement
-                </Link>
-              </li>
             </ul>
           </div>
 

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Chapman Digital - AI Consulting & Digital Transformation",
   description: "Empowering organizations to modernize through AI, intelligent front-end design, and streamlined digital experiences.",
-  keywords: ["AI consulting", "digital transformation", "front-end modernization", "Salesforce", "enterprise software"],
+  keywords: ["AI consulting", "digital transformation", "front-end modernization", "enterprise software"],
   authors: [{ name: "Chapman Digital" }],
   openGraph: {
     title: "Chapman Digital - AI Consulting & Digital Transformation",
