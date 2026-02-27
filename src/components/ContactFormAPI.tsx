@@ -78,7 +78,7 @@ export default function ContactFormAPI() {
         <div className="bg-red-50 border border-red-200 rounded-lg p-4">
           <p className="text-red-700 text-sm mb-2">{error}</p>
           <a 
-            href={`mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
+            href={`mailto:gregory.chapman@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
             className="text-blue-600 hover:text-blue-800 underline text-sm"
           >
             Or click here to email us directly

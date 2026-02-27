@@ -14,8 +14,7 @@ export default function Services() {
               Our <span className="text-gradient">Services</span>
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              We combine enterprise-level expertise with agile, design-driven execution 
-              to deliver measurable results.
+              Structured modernization for growing organizations.
             </p>
           </div>
         </Container>
@@ -25,7 +24,7 @@ export default function Services() {
       <Section background="gray" className="py-20">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* AI Consulting */}
+            {/* Workflow Audit & Modernization Strategy */}
             <Card hover className="p-8 border-l-4 border-l-blue-500">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,112 +32,109 @@ export default function Services() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8M8 11h8M8 15h4" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">AI Consulting</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Workflow Audit &amp; Modernization Strategy</h2>
               <p className="text-lg text-neutral-600 mb-6">
-                Strategy, implementation, and integration of AI systems. We help you navigate 
-                the complex landscape of artificial intelligence with practical, actionable solutions.
+                We diagnose operational bottlenecks and build a structured modernization plan that aligns teams, systems, and decision-making.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Prompt & agent design</span>
+                  <span className="text-neutral-700">Workflow mapping and friction analysis</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Knowledge grounding</span>
+                  <span className="text-neutral-700">Structural systems review and ownership clarity</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Responsible AI enablement</span>
+                  <span className="text-neutral-700">Prioritized modernization roadmap</span>
                 </li>
               </ul>
               <div className="bg-primary-50 p-4 rounded-lg">
                 <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> Actionable intelligence, faster workflows, consistent answers.
+                  <strong>Outcome:</strong> A clear modernization plan grounded in operational reality.
                 </p>
               </div>
             </Card>
 
-            {/* Front-End Modernization */}
+            {/* Intelligent Automation Architecture */}
             <Card hover className="p-8 border-l-4 border-l-cyan-500">
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Front-End Modernization</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Intelligent Automation Architecture</h2>
               <p className="text-lg text-neutral-600 mb-6">
-                Rebuilding digital touchpoints for usability and engagement. We transform 
-                outdated interfaces into modern, intuitive experiences that users love.
+                We architect automation layers that reduce manual coordination and improve operational consistency without creating additional complexity.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Portal redesigns</span>
+                  <span className="text-neutral-700">Automation opportunity modeling</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">UI/UX modernization</span>
+                  <span className="text-neutral-700">AI-assisted workflow architecture</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Accessibility and performance</span>
+                  <span className="text-neutral-700">Control and escalation design for reliability</span>
                 </li>
               </ul>
               <div className="bg-primary-50 p-4 rounded-lg">
                 <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> Intuitive experiences that users trust.
+                  <strong>Outcome:</strong> Selective automation that creates measurable leverage.
                 </p>
               </div>
             </Card>
 
-            {/* Digital Transformation */}
+            {/* System Implementation & Optimization */}
             <Card hover className="p-8 border-l-4 border-l-teal-500">
               <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Digital Transformation</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">System Implementation &amp; Optimization</h2>
               <p className="text-lg text-neutral-600 mb-6">
-                Bridging legacy workflows with modern tools. We help you integrate data, 
-                workflows, and automation for measurable results.
+                We implement modernized operating systems, refine execution workflows, and continuously optimize for scale, ownership, and operational clarity.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Workflow automation</span>
+                  <span className="text-neutral-700">Cross-system implementation and integration</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Data integration</span>
+                  <span className="text-neutral-700">Operational process hardening and documentation</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Dashboarding & reporting</span>
+                  <span className="text-neutral-700">Continuous optimization for scaling teams</span>
                 </li>
               </ul>
               <div className="bg-primary-50 p-4 rounded-lg">
                 <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> Smarter operations, clearer decisions.
+                  <strong>Outcome:</strong> Coherent, durable systems that improve execution quality over time.
                 </p>
               </div>
             </Card>

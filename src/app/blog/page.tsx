@@ -9,11 +9,10 @@ export default function Blog() {
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Blog
+              Perspectives
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              Insights, trends, and best practices in AI, digital transformation, 
-              and modern user experience design.
+              Thoughts on operational systems, intelligent automation, and modern infrastructure.
             </p>
           </div>
         </Container>

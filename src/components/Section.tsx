@@ -12,9 +12,9 @@ export default function Section({
   background = 'white' 
 }: SectionProps) {
   const backgroundClasses = {
-    white: 'bg-white',
-    gray: 'bg-neutral-50',
-    primary: 'bg-gradient-to-br from-blue-600 to-cyan-600'
+    white: 'bg-surface-light',
+    gray: 'bg-surface-alt',
+    primary: 'bg-surface-dark'
   };
 
   return (

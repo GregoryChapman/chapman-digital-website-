@@ -14,8 +14,7 @@ export default function Projects() {
               Our Projects
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              Explore our portfolio of successful digital transformations, AI implementations, 
-              and modern user experiences.
+              Selected system modernization engagements.
             </p>
           </div>
         </Container>
@@ -47,26 +46,14 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">
                   AI-Enhanced Service Portal
                 </h3>
-                <p className="text-neutral-600 mb-4">
-                  Redesigned citizen portal with AI-driven triage and analytics. 
-                  Reduced manual intake by 40% and improved case routing accuracy.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Reduced manual intake by 40%
-                  </div>
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Improved case routing accuracy
-                  </div>
+                <div className="space-y-3 text-sm text-neutral-700 mb-6">
+                  <p><strong>Initial state:</strong> A fragmented citizen intake process spread across disconnected channels.</p>
+                  <p><strong>Structural issue:</strong> Manual triage and unclear routing ownership created delays and rework.</p>
+                  <p><strong>Architecture designed:</strong> A centralized intake workflow with AI-assisted classification and clear escalation logic.</p>
+                  <p><strong>Operational improvement:</strong> Reduced manual intake by 40% and improved routing consistency.</p>
                 </div>
                 <Button href="/projects/ai-service-portal" variant="outline" size="sm">
-                  View Details
+                  Review Engagement →
                 </Button>
               </div>
             </Card>
@@ -93,26 +80,14 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">
                   Enterprise Dashboard Modernization
                 </h3>
-                <p className="text-neutral-600 mb-4">
-                  Transformed legacy reporting system into modern, interactive dashboards 
-                  with real-time analytics and intuitive data visualization.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Real-time data visualization
-                  </div>
-                  <div className="flex items-center text-sm text-neutral-600">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    60% faster decision making
-                  </div>
+                <div className="space-y-3 text-sm text-neutral-700 mb-6">
+                  <p><strong>Initial state:</strong> Leadership relied on static reporting from an aging dashboard stack.</p>
+                  <p><strong>Structural issue:</strong> Data latency and fragmented reporting layers delayed operational decisions.</p>
+                  <p><strong>Architecture designed:</strong> A unified, real-time dashboard framework with role-based information flow.</p>
+                  <p><strong>Operational improvement:</strong> Faster decision cycles and stronger alignment across teams.</p>
                 </div>
                 <Button href="/projects/enterprise-dashboard" variant="outline" size="sm">
-                  View Details
+                  Review Engagement →
                 </Button>
               </div>
             </Card>

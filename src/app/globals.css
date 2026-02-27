@@ -2,8 +2,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F4F7FA;
+  --foreground: #1C2B3A;
+  --heading: #0B1F33;
 }
 
 @theme inline {
@@ -12,17 +13,38 @@
   --font-sans: 'Inter', 'DM Sans', system-ui, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
-  line-height: 1.6;
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading);
+  }
 }
 
 /* Chapman Digital custom styles */
 .text-gradient {
-  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+  background: linear-gradient(135deg, #0B1F33, #4A90A4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@keyframes fadeInUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-soft {
+  animation: fadeInUpSoft 700ms ease-out both;
 }

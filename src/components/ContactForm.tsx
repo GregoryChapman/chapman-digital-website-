@@ -42,7 +42,7 @@ export default function ContactForm() {
         from_email: formData.email,
         company: formData.company || 'Not provided',
         message: formData.message,
-        to_email: 'contact@chapmandigitalservices.com'
+        to_email: 'gregory.chapman@chapmandigitalservices.com'
       };
       
       console.log('Sending email via EmailJS with params:', templateParams);
@@ -87,7 +87,7 @@ export default function ContactForm() {
         
         // Final fallback: show error with helpful message
         const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-        setError(`Failed to send message: ${errorMessage}. Please email us directly at contact@chapmandigitalservices.com or try again later.`);
+        setError(`Failed to send message: ${errorMessage}. Please email us directly at gregory.chapman@chapmandigitalservices.com or try again later.`);
         
         setIsSubmitting(false);
       }
@@ -114,7 +114,7 @@ export default function ContactForm() {
         <div className="bg-red-50 border border-red-200 rounded-lg p-4">
           <p className="text-red-700 text-sm mb-2">{error}</p>
           <a 
-            href={`mailto:contact@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
+            href={`mailto:gregory.chapman@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
             className="text-blue-600 hover:text-blue-800 underline text-sm"
           >
             Or click here to email us directly
