@@ -1,3 +1,6 @@
+"use client";
+
+import { track } from "@vercel/analytics";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
@@ -14,7 +17,7 @@ export default function Projects() {
               Recent work
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Sites and systems I&apos;ve built for creators and small businesses.
+              Sites I&apos;ve built for creators and small businesses.
             </p>
           </div>
         </Container>
@@ -60,19 +63,20 @@ export default function Projects() {
                   </h3>
                   <div className="space-y-3 text-neutral-700 leading-relaxed mb-6">
                     <p>
-                      <strong>The brief:</strong> Bella needed one place that captured her creator brand end-to-end — portfolio, media kit, brand collaborations, contact — without forcing partners to bounce between platforms.
+                      <strong>The brief:</strong> Bella needed a single source of truth for her brand — somewhere brand partners could meet her work, see who she is, and reach out, without bouncing between scattered platforms or a basic link tree.
                     </p>
                     <p>
-                      <strong>What I built:</strong> A clean, mobile-first creator site that doubles as a portfolio and media kit. Custom design, fast load times, built for the way brand partnerships actually happen in 2026.
+                      <strong>What I built:</strong> A clean, mobile-first creator site that doubles as a portfolio and media kit. One professional home for everything that matters.
                     </p>
                     <p>
-                      <strong>The outcome:</strong> A single, professional source of truth for the brand — confidently linkable in bio, in pitch emails, and in collaboration conversations.
+                      <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners — replacing a Linktree with something that actually represents the brand.
                     </p>
                   </div>
                   <a
                     href="https://bellalamanna.ca"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => track("portfolio_click", { project: "bellalamanna" })}
                     className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
                   >
                     Visit bellalamanna.ca →
@@ -92,7 +96,7 @@ export default function Projects() {
               More in flight
             </h2>
             <p className="text-lg text-neutral-700 leading-relaxed mb-8">
-              I&apos;m currently building out a portfolio of AI and automation engagements with small business clients. Case studies for those will land here as they go live.
+              I&apos;m actively building sites with small creators and small business clients. Case studies will land here as they go live.
             </p>
             <p className="text-base text-neutral-600">
               Want to be a case study? Early clients get a meaningful discount in exchange for letting me share the work.

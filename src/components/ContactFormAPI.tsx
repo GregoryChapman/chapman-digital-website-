@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { track } from '@vercel/analytics';
 import Button from './Button';
 
 export default function ContactFormAPI() {
@@ -41,6 +42,7 @@ export default function ContactFormAPI() {
         throw new Error(data.error || 'Failed to send message');
       }
 
+      track('contact_form_submit', { source: 'cds_contact_page' });
       setIsSubmitted(true);
       // Reset form after successful submission
       setFormData({

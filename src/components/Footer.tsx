@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[#D6E1EB] mb-4 max-w-md">
-              Modern websites and AI solutions for creators and small businesses — fast, professional builds powered by AI, without the agency price tag.
+              Modern websites for creators and small businesses. Live in weeks, not months — fixed scope, fixed price, professional quality at small-business prices.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[#C3D2DF] hover:text-[#EAF3F8] transition-colors">
@@ -47,7 +47,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
-                  AI &amp; automation
+                  Small business websites
                 </Link>
               </li>
               <li>

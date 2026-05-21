@@ -14,7 +14,7 @@ export default function Services() {
               What I <span className="text-gradient">build</span>
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Two focused offerings — both built with AI in the loop so you get bigger-agency quality on a small-business budget.
+              Two focused offerings — built for people who want professional quality on a small-business budget and timeline.
             </p>
           </div>
         </Container>
@@ -36,12 +36,12 @@ export default function Services() {
               </span>
               <h2 className="text-3xl font-bold text-neutral-900 mb-3">Creator sites</h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                Modern personal brand websites for influencers, content creators, and public figures who need a real online home — not another link tree.
+                Personal brand websites for influencers, content creators, and public figures who need a real online home — not another link tree.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
               <p className="text-neutral-700 mb-6 leading-relaxed">
-                Creators who are getting brand inquiries and need a professional place to send them. Public figures who&apos;ve outgrown a basic Linktree. Anyone whose personal brand is starting to feel like a business.
+                Creators getting brand inquiries who need a professional place to send them. Public figures who&apos;ve outgrown a basic Linktree. Anyone whose personal brand is starting to feel like a business.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">What&apos;s included</h3>
@@ -89,24 +89,24 @@ export default function Services() {
               </Button>
             </Card>
 
-            {/* AI & Automation for Small Business */}
+            {/* Small Business Websites */}
             <Card hover className="p-8 border-l-4 border-l-cyan-500">
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
               <span className="inline-block px-3 py-1 bg-cyan-100 text-cyan-700 text-xs font-semibold rounded mb-3 tracking-wide uppercase">
                 For small business
               </span>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-3">AI &amp; automation for small business</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-3">Small business websites</h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                Intelligent automation, AI-assisted workflows, and a modern web presence — built around the way your business actually runs.
+                A modern, professional web presence for small businesses that need to look the part online — built fast, ready to run from day one.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
               <p className="text-neutral-700 mb-6 leading-relaxed">
-                Small businesses doing meaningful work but losing hours every week to manual tasks, scattered tools, or an outdated website. You want to work smarter without hiring a full team to do it.
+                Small businesses doing good work but losing leads to a dated website, a template they can&apos;t edit, or no site at all. You want something clean, professional, and yours — without the agency price tag.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">What&apos;s included</h3>
@@ -115,50 +115,80 @@ export default function Services() {
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Custom AI tools tailored to your business (intake, drafting, follow-ups, support)</span>
+                  <span className="text-neutral-700">Custom-designed pages tailored to how your business actually runs</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Workflow automation that connects the tools you already use</span>
+                  <span className="text-neutral-700">Mobile-first design with fast load times</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Modern, professional website that actually drives business</span>
+                  <span className="text-neutral-700">Contact forms and lead capture wired up out of the box</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">A short discovery up front so we only build things you&apos;ll use</span>
+                  <span className="text-neutral-700">SEO baseline and analytics setup ready to go</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Clear handoff and documentation so you&apos;re not dependent on me forever</span>
+                  <span className="text-neutral-700">Custom domain setup and hosting handoff</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700">Fixed scope, fixed price — no surprise invoices</span>
                 </li>
               </ul>
 
               <div className="bg-primary-50 p-4 rounded-lg mb-6">
                 <p className="text-primary-800 font-medium">
-                  <strong>The outcome:</strong> Hours back in your week, a sharper online presence, and AI working quietly in the background — exactly where it earns its keep.
+                  <strong>The outcome:</strong> A modern, professional site you&apos;re proud to send customers to — and that actually pulls its weight in bringing them in.
                 </p>
               </div>
 
               <Button href="/contact" variant="primary" size="md">
-                Start an AI project
+                Start a business site
               </Button>
             </Card>
           </div>
         </Container>
       </Section>
 
-      {/* CTA Section */}
+      {/* Additional Services — Automation */}
       <Section className="py-20">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-sm uppercase tracking-widest text-neutral-500 font-semibold mb-3">
+                Additional services
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+                Want to go further?
+              </h2>
+            </div>
+            <Card className="border-l-4 border-l-neutral-700">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                Custom workflow automations
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Once your site is live, I can help streamline the operations behind it — connecting the tools you already use, taking repetitive tasks off your plate, and freeing up hours each week. It&apos;s a capability I offer to existing clients, not the headline. If you have a specific bottleneck in mind, mention it when we talk and we&apos;ll figure out whether it&apos;s worth tackling.
+              </p>
+            </Card>
+          </div>
+        </Container>
+      </Section>
+
+      {/* CTA Section */}
+      <Section background="gray" className="py-20">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold text-neutral-900 mb-6">

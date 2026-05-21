@@ -13,7 +13,7 @@ export default function Contact() {
               Let&apos;s build <span className="text-gradient">something.</span>
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Tell me a bit about your project — whether it&apos;s a creator site or an AI/automation idea for your small business. I&apos;ll come back with a realistic scope and price, usually within a day.
+              Tell me a bit about your project — a creator site, a small business site, or something else you have in mind. I&apos;ll come back with a realistic scope and price, usually within a day.
             </p>
           </div>
         </Container>
