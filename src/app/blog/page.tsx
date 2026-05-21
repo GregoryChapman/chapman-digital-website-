@@ -11,8 +11,8 @@ export default function Blog() {
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
               Perspectives
             </h1>
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              Thoughts on operational systems, intelligent automation, and modern infrastructure.
+            <p className="text-xl text-neutral-700 leading-relaxed">
+              Notes on building with AI — practical takes on creator sites, small business automation, and the tools I actually use day to day.
             </p>
           </div>
         </Container>
@@ -28,18 +28,17 @@ export default function Blog() {
               </svg>
             </div>
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Coming Soon
+              Writing soon
             </h2>
-            <p className="text-lg text-neutral-600 mb-8">
-              We&apos;re working on bringing you valuable insights about AI, digital transformation, 
-              and modern design practices. Check back soon for our latest articles.
+            <p className="text-lg text-neutral-700 mb-8">
+              First posts are in the works — short, honest pieces about building with AI as a one-person shop. Drop your email if you want me to send them when they go live.
             </p>
             <div className="bg-white rounded-lg p-6 shadow-sm border border-neutral-200">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">
-                Stay Updated
+                Get notified
               </h3>
-              <p className="text-neutral-600 mb-4">
-                Subscribe to our newsletter to be the first to know when we publish new content.
+              <p className="text-neutral-700 mb-4">
+                No spam, no newsletter-industrial-complex — just an email when something new is up.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <input

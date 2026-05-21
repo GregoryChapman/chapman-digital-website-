@@ -10,11 +10,10 @@ export default function Contact() {
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Get In <span className="text-gradient">Touch</span>
+              Let&apos;s build <span className="text-gradient">something.</span>
             </h1>
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              Ready to modernize your organization? Let&apos;s discuss how we can help you 
-              leverage AI, improve user experiences, and streamline your digital operations.
+            <p className="text-xl text-neutral-700 leading-relaxed">
+              Tell me a bit about your project — whether it&apos;s a creator site or an AI/automation idea for your small business. I&apos;ll come back with a realistic scope and price, usually within a day.
             </p>
           </div>
         </Container>
@@ -26,10 +25,10 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                Start Your Transformation
+                Send me a note
               </h2>
-              <p className="text-lg text-neutral-600">
-                Tell us about your project and we&apos;ll get back to you within 24 hours.
+              <p className="text-lg text-neutral-700">
+                A couple of sentences is plenty. I read every message and reply personally — usually within 24 hours.
               </p>
             </div>
             

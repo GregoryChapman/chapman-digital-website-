@@ -11,10 +11,10 @@ export default function Services() {
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Our <span className="text-gradient">Services</span>
+              What I <span className="text-gradient">build</span>
             </h1>
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              Structured modernization for growing organizations.
+            <p className="text-xl text-neutral-700 leading-relaxed">
+              Two focused offerings — both built with AI in the loop so you get bigger-agency quality on a small-business budget.
             </p>
           </div>
         </Container>
@@ -23,122 +23,136 @@ export default function Services() {
       {/* Services Grid */}
       <Section background="gray" className="py-20">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Workflow Audit & Modernization Strategy */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+            {/* Creator Sites */}
             <Card hover className="p-8 border-l-4 border-l-blue-500">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8M8 11h8M8 15h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Workflow Audit &amp; Modernization Strategy</h2>
-              <p className="text-lg text-neutral-600 mb-6">
-                We diagnose operational bottlenecks and build a structured modernization plan that aligns teams, systems, and decision-making.
+              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded mb-3 tracking-wide uppercase">
+                For creators
+              </span>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-3">Creator sites</h2>
+              <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+                Modern personal brand websites for influencers, content creators, and public figures who need a real online home — not another link tree.
               </p>
-              <ul className="space-y-3 mb-8">
+
+              <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
+              <p className="text-neutral-700 mb-6 leading-relaxed">
+                Creators who are getting brand inquiries and need a professional place to send them. Public figures who&apos;ve outgrown a basic Linktree. Anyone whose personal brand is starting to feel like a business.
+              </p>
+
+              <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">What&apos;s included</h3>
+              <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Workflow mapping and friction analysis</span>
+                  <span className="text-neutral-700">Custom-designed home, about, portfolio, and contact pages</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Structural systems review and ownership clarity</span>
+                  <span className="text-neutral-700">Media kit and Work With Me page for brand collaborations</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Prioritized modernization roadmap</span>
+                  <span className="text-neutral-700">Mobile-first design, fast load times, search-ready</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700">Custom domain setup and hosting handoff</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700">Fixed scope, fixed price — no surprise invoices</span>
                 </li>
               </ul>
-              <div className="bg-primary-50 p-4 rounded-lg">
+
+              <div className="bg-primary-50 p-4 rounded-lg mb-6">
                 <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> A clear modernization plan grounded in operational reality.
+                  <strong>The outcome:</strong> A site you&apos;re proud to drop in your bio — one place brands and fans can find everything that matters.
                 </p>
               </div>
+
+              <Button href="/contact" variant="primary" size="md">
+                Start a creator site
+              </Button>
             </Card>
 
-            {/* Intelligent Automation Architecture */}
+            {/* AI & Automation for Small Business */}
             <Card hover className="p-8 border-l-4 border-l-cyan-500">
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Intelligent Automation Architecture</h2>
-              <p className="text-lg text-neutral-600 mb-6">
-                We architect automation layers that reduce manual coordination and improve operational consistency without creating additional complexity.
+              <span className="inline-block px-3 py-1 bg-cyan-100 text-cyan-700 text-xs font-semibold rounded mb-3 tracking-wide uppercase">
+                For small business
+              </span>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-3">AI &amp; automation for small business</h2>
+              <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+                Intelligent automation, AI-assisted workflows, and a modern web presence — built around the way your business actually runs.
               </p>
-              <ul className="space-y-3 mb-8">
+
+              <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
+              <p className="text-neutral-700 mb-6 leading-relaxed">
+                Small businesses doing meaningful work but losing hours every week to manual tasks, scattered tools, or an outdated website. You want to work smarter without hiring a full team to do it.
+              </p>
+
+              <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">What&apos;s included</h3>
+              <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Automation opportunity modeling</span>
+                  <span className="text-neutral-700">Custom AI tools tailored to your business (intake, drafting, follow-ups, support)</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">AI-assisted workflow architecture</span>
+                  <span className="text-neutral-700">Workflow automation that connects the tools you already use</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Control and escalation design for reliability</span>
+                  <span className="text-neutral-700">Modern, professional website that actually drives business</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700">A short discovery up front so we only build things you&apos;ll use</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700">Clear handoff and documentation so you&apos;re not dependent on me forever</span>
                 </li>
               </ul>
-              <div className="bg-primary-50 p-4 rounded-lg">
+
+              <div className="bg-primary-50 p-4 rounded-lg mb-6">
                 <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> Selective automation that creates measurable leverage.
+                  <strong>The outcome:</strong> Hours back in your week, a sharper online presence, and AI working quietly in the background — exactly where it earns its keep.
                 </p>
               </div>
-            </Card>
 
-            {/* System Implementation & Optimization */}
-            <Card hover className="p-8 border-l-4 border-l-teal-500">
-              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-6 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-4">System Implementation &amp; Optimization</h2>
-              <p className="text-lg text-neutral-600 mb-6">
-                We implement modernized operating systems, refine execution workflows, and continuously optimize for scale, ownership, and operational clarity.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-neutral-700">Cross-system implementation and integration</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-neutral-700">Operational process hardening and documentation</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-neutral-700">Continuous optimization for scaling teams</span>
-                </li>
-              </ul>
-              <div className="bg-primary-50 p-4 rounded-lg">
-                <p className="text-primary-800 font-medium">
-                  <strong>Outcome:</strong> Coherent, durable systems that improve execution quality over time.
-                </p>
-              </div>
+              <Button href="/contact" variant="primary" size="md">
+                Start an AI project
+              </Button>
             </Card>
-
           </div>
         </Container>
       </Section>
@@ -148,13 +162,13 @@ export default function Services() {
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold text-neutral-900 mb-6">
-              Ready to Transform Your Organization?
+              Not sure which one fits?
             </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Let&apos;s discuss how our services can help you achieve your digital transformation goals.
+            <p className="text-xl text-neutral-700 mb-8">
+              Send a few sentences about what you&apos;re working on. I&apos;ll tell you honestly whether I&apos;m the right person for it, and what a realistic scope and price would look like.
             </p>
             <Button href="/contact" variant="primary" size="lg">
-              Get Started
+              Let&apos;s build something
             </Button>
           </div>
         </Container>

@@ -11,104 +11,108 @@ export default function Projects() {
         <Container>
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Our Projects
+              Recent work
             </h1>
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              Selected system modernization engagements.
+            <p className="text-xl text-neutral-700 leading-relaxed">
+              Sites and systems I&apos;ve built for creators and small businesses.
             </p>
           </div>
         </Container>
       </Section>
 
-      {/* Projects Grid */}
+      {/* Featured Project */}
       <Section background="gray" className="py-20">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* AI-Enhanced Service Portal */}
-            <Card hover className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-2 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded">
-                    AI
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    UX
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    Modernization
-                  </span>
+          <div className="max-w-6xl mx-auto">
+            <p className="text-sm uppercase tracking-widest text-primary-600 font-semibold mb-3 text-center">
+              Featured project
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-10 text-center">
+              bellalamanna.ca
+            </h2>
+
+            <Card className="overflow-hidden p-0 border-l-4 border-l-primary-500">
+              <div className="grid grid-cols-1 md:grid-cols-5">
+                <div className="md:col-span-2 min-h-[260px] bg-gradient-to-br from-[#0B1F33] via-[#1C3A52] to-[#5BA8BD] flex items-center justify-center p-8">
+                  <div className="text-center">
+                    <p className="text-white/70 text-sm uppercase tracking-widest mb-2">Creator site</p>
+                    <p className="text-white text-3xl font-semibold">Bella Lamanna</p>
+                    <p className="text-white/80 mt-2">bellalamanna.ca</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                  AI-Enhanced Service Portal
-                </h3>
-                <div className="space-y-3 text-sm text-neutral-700 mb-6">
-                  <p><strong>Initial state:</strong> A fragmented citizen intake process spread across disconnected channels.</p>
-                  <p><strong>Structural issue:</strong> Manual triage and unclear routing ownership created delays and rework.</p>
-                  <p><strong>Architecture designed:</strong> A centralized intake workflow with AI-assisted classification and clear escalation logic.</p>
-                  <p><strong>Operational improvement:</strong> Reduced manual intake by 40% and improved routing consistency.</p>
+                <div className="md:col-span-3 p-8">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded">
+                      Creator site
+                    </span>
+                    <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
+                      Portfolio
+                    </span>
+                    <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
+                      Brand partnerships
+                    </span>
+                    <span className="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                      Live
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
+                    A professional home for a growing creator brand
+                  </h3>
+                  <div className="space-y-3 text-neutral-700 leading-relaxed mb-6">
+                    <p>
+                      <strong>The brief:</strong> Bella needed one place that captured her creator brand end-to-end — portfolio, media kit, brand collaborations, contact — without forcing partners to bounce between platforms.
+                    </p>
+                    <p>
+                      <strong>What I built:</strong> A clean, mobile-first creator site that doubles as a portfolio and media kit. Custom design, fast load times, built for the way brand partnerships actually happen in 2026.
+                    </p>
+                    <p>
+                      <strong>The outcome:</strong> A single, professional source of truth for the brand — confidently linkable in bio, in pitch emails, and in collaboration conversations.
+                    </p>
+                  </div>
+                  <a
+                    href="https://bellalamanna.ca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
+                  >
+                    Visit bellalamanna.ca →
+                  </a>
                 </div>
-                <Button href="/projects/ai-service-portal" variant="outline" size="sm">
-                  Review Engagement →
-                </Button>
               </div>
             </Card>
+          </div>
+        </Container>
+      </Section>
 
-            {/* Enterprise Dashboard Modernization */}
-            <Card hover className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">
-                    Dashboard
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    Analytics
-                  </span>
-                  <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">
-                    UX
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                  Enterprise Dashboard Modernization
-                </h3>
-                <div className="space-y-3 text-sm text-neutral-700 mb-6">
-                  <p><strong>Initial state:</strong> Leadership relied on static reporting from an aging dashboard stack.</p>
-                  <p><strong>Structural issue:</strong> Data latency and fragmented reporting layers delayed operational decisions.</p>
-                  <p><strong>Architecture designed:</strong> A unified, real-time dashboard framework with role-based information flow.</p>
-                  <p><strong>Operational improvement:</strong> Faster decision cycles and stronger alignment across teams.</p>
-                </div>
-                <Button href="/projects/enterprise-dashboard" variant="outline" size="sm">
-                  Review Engagement →
-                </Button>
-              </div>
-            </Card>
-
+      {/* More Work / In Progress */}
+      <Section className="py-20">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+              More in flight
+            </h2>
+            <p className="text-lg text-neutral-700 leading-relaxed mb-8">
+              I&apos;m currently building out a portfolio of AI and automation engagements with small business clients. Case studies for those will land here as they go live.
+            </p>
+            <p className="text-base text-neutral-600">
+              Want to be a case study? Early clients get a meaningful discount in exchange for letting me share the work.
+            </p>
           </div>
         </Container>
       </Section>
 
       {/* CTA Section */}
-      <Section className="py-20">
+      <Section background="gray" className="py-20">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold text-neutral-900 mb-6">
-              Ready to Start Your Project?
+              Have something in mind?
             </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Let&apos;s discuss how we can help transform your organization with modern 
-              technology and intelligent design.
+            <p className="text-xl text-neutral-700 mb-8">
+              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price — usually within a day.
             </p>
             <Button href="/contact" variant="primary" size="lg">
-              Get Started
+              Let&apos;s build something
             </Button>
           </div>
         </Container>

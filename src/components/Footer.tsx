@@ -18,8 +18,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[#D6E1EB] mb-4 max-w-md">
-              Empowering organizations to modernize through AI, intelligent front-end design, 
-              and streamlined digital experiences.
+              Modern websites and AI solutions for creators and small businesses — fast, professional builds powered by AI, without the agency price tag.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[#C3D2DF] hover:text-[#EAF3F8] transition-colors">
@@ -43,17 +42,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/services" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
-                  AI Consulting
+                  Creator sites
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
-                  Front-End Modernization
+                  AI &amp; automation
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
-                  Digital Transformation
+                <Link href="/projects" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
+                  Recent work
                 </Link>
               </li>
             </ul>
@@ -85,7 +84,7 @@ export default function Footer() {
         <div className="border-t border-[#2B3D4E] mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-[#C3D2DF] text-sm">
-              © 2025 Chapman Digital. All rights reserved.
+              © 2026 Chapman Digital Services. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy" className="text-[#C3D2DF] hover:text-[#EAF3F8] text-sm transition-colors">

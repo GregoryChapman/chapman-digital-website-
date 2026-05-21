@@ -66,8 +66,8 @@ export default function ContactFormAPI() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-lg font-semibold text-green-800 mb-2">Message Sent Successfully!</h3>
-        <p className="text-green-700">Thank you for reaching out! We&apos;ve received your message and will get back to you within 24 hours.</p>
+        <h3 className="text-lg font-semibold text-green-800 mb-2">Got it — message sent.</h3>
+        <p className="text-green-700">Thanks for reaching out. I&apos;ll reply personally, usually within 24 hours.</p>
       </div>
     );
   }
@@ -81,7 +81,7 @@ export default function ContactFormAPI() {
             href={`mailto:gregory.chapman@chapmandigitalservices.com?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'Not provided'}\n\nMessage:\n${formData.message}`)}`}
             className="text-blue-600 hover:text-blue-800 underline text-sm"
           >
-            Or click here to email us directly
+            Or click here to email me directly
           </a>
         </div>
       )}
@@ -122,7 +122,7 @@ export default function ContactFormAPI() {
       
       <div>
         <label htmlFor="company" className="block text-sm font-medium text-neutral-700 mb-2">
-          Company
+          Brand or business <span className="text-neutral-400 font-normal">(optional)</span>
         </label>
         <input
           type="text"
@@ -131,7 +131,7 @@ export default function ContactFormAPI() {
           value={formData.company}
           onChange={handleChange}
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-          placeholder="Your company name"
+          placeholder="Your creator name, brand, or business"
         />
       </div>
       
@@ -147,7 +147,7 @@ export default function ContactFormAPI() {
           value={formData.message}
           onChange={handleChange}
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
-          placeholder="Tell us about your project or how we can help..."
+          placeholder="A couple of sentences about what you're trying to build is plenty."
         />
       </div>
       
@@ -158,7 +158,7 @@ export default function ContactFormAPI() {
         className="w-full"
         onClick={() => {}}
       >
-        {isSubmitting ? 'Sending...' : 'Send Message'}
+        {isSubmitting ? 'Sending...' : 'Send it'}
       </Button>
     </form>
   );
