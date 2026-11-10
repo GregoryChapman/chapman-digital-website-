@@ -9,7 +9,8 @@ export default function ContactFormAPI() {
     name: '',
     email: '',
     company: '',
-    message: ''
+    message: '',
+    website: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -49,7 +50,8 @@ export default function ContactFormAPI() {
         name: '',
         email: '',
         company: '',
-        message: ''
+        message: '',
+        website: ''
       });
     } catch (error) {
       console.error('Error sending email:', error);
@@ -76,6 +78,20 @@ export default function ContactFormAPI() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Honeypot for bots: hidden from people and screen readers */}
+      <div aria-hidden="true" className="absolute -left-[10000px] h-px w-px overflow-hidden">
+        <label htmlFor="website">Leave this field empty</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={handleChange}
+        />
+      </div>
+
       {error && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-4">
           <p className="text-red-700 text-sm mb-2">{error}</p>
@@ -97,6 +113,8 @@ export default function ContactFormAPI() {
             type="text"
             id="name"
             name="name"
+            maxLength={100}
+            autoComplete="name"
             required
             value={formData.name}
             onChange={handleChange}
@@ -113,6 +131,8 @@ export default function ContactFormAPI() {
             type="email"
             id="email"
             name="email"
+            maxLength={254}
+            autoComplete="email"
             required
             value={formData.email}
             onChange={handleChange}
@@ -130,6 +150,7 @@ export default function ContactFormAPI() {
           type="text"
           id="company"
           name="company"
+          maxLength={150}
           value={formData.company}
           onChange={handleChange}
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
@@ -144,6 +165,7 @@ export default function ContactFormAPI() {
         <textarea
           id="message"
           name="message"
+          maxLength={5000}
           required
           rows={6}
           value={formData.message}
