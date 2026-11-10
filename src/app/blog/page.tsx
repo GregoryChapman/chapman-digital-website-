@@ -49,7 +49,11 @@ export default function Blog() {
                 No spam, no newsletter-industrial-complex — just an email when something new is up.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
+                <label htmlFor="notify-email" className="sr-only">
+                  Email address
+                </label>
                 <input
+                  id="notify-email"
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
