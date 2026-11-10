@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { site } from '@/lib/site';
 
 export default function Footer() {
   return (
@@ -22,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/chapmandigitalservices/"
+                href={site.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#C3D2DF] hover:text-[#EAF3F8] transition-colors"

@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, site } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Privacy",
@@ -9,7 +9,7 @@ export const metadata = pageMetadata({
   path: "/privacy",
 });
 
-const CONTACT_EMAIL = "contact@chapmandigitalservices.com";
+const CONTACT_EMAIL = site.email;
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (

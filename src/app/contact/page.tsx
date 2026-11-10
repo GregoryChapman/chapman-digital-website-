@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
 import ContactFormAPI from "@/components/ContactFormAPI";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, site } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Contact",
@@ -68,7 +68,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Instagram</h3>
               <p className="text-neutral-600">
                 <a
-                  href="https://www.instagram.com/chapmandigitalservices/"
+                  href={site.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline underline-offset-4 hover:text-neutral-900"

@@ -2,10 +2,12 @@ import Container from "@/components/Container";
 import TrackedLink from "@/components/TrackedLink";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
+import StructuredData from "@/components/StructuredData";
 
 export default function Home() {
   return (
     <>
+      <StructuredData />
       {/* Hero Section */}
       <Section className="py-16 md:py-[4.5rem] relative overflow-hidden">
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0B1F33] to-[#162636]" />

@@ -7,6 +7,8 @@ export const site = {
   description:
     "Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.",
   locale: "en_CA",
+  email: "contact@chapmandigitalservices.com",
+  instagram: "https://www.instagram.com/chapmandigitalservices/",
 } as const;
 
 /** The generated default share image (src/app/opengraph-image.tsx). */
