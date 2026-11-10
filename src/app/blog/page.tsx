@@ -20,7 +20,7 @@ export default function Blog() {
               Perspectives
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Notes from building websites for small creators and small businesses — practical takes on the craft, the work, and what I&apos;m learning along the way.
+              Notes from building websites for small creators and small businesses: practical takes on the craft, the work, and what I&apos;m learning along the way.
             </p>
           </div>
         </Container>
@@ -39,14 +39,14 @@ export default function Blog() {
               Writing soon
             </h2>
             <p className="text-lg text-neutral-700 mb-8">
-              First posts are in the works — short, honest pieces from a one-person shop building modern websites for small clients. Drop your email if you want me to send them when they go live.
+              First posts are in the works: short, honest pieces from a one-person shop building modern websites for small clients. Drop your email if you want me to send them when they go live.
             </p>
             <div className="bg-white rounded-lg p-6 shadow-sm border border-neutral-200">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">
                 Get notified
               </h3>
               <p className="text-neutral-700 mb-4">
-                No spam, no newsletter-industrial-complex — just an email when something new is up.
+                No spam, no newsletter-industrial-complex. Just an email when something new is up.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <label htmlFor="notify-email" className="sr-only">

@@ -22,7 +22,7 @@ export default function Services() {
               What I <span className="text-gradient">build</span>
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Two focused offerings — built for people who want professional quality on a small-business budget and timeline.
+              Two focused offerings, built for people who want professional quality on a small-business budget and timeline.
             </p>
           </div>
         </Container>
@@ -44,7 +44,7 @@ export default function Services() {
               </span>
               <h2 className="text-3xl font-bold text-neutral-900 mb-3">Creator sites</h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                Personal brand websites for influencers, content creators, and public figures who need a real online home — not another link tree.
+                Personal brand websites for influencers, content creators, and public figures who need a real online home, not another link tree.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
@@ -82,13 +82,13 @@ export default function Services() {
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Fixed scope, fixed price — no surprise invoices</span>
+                  <span className="text-neutral-700">Fixed scope, fixed price, no surprise invoices</span>
                 </li>
               </ul>
 
               <div className="bg-primary-50 p-4 rounded-lg mb-6">
                 <p className="text-primary-800 font-medium">
-                  <strong>The outcome:</strong> A site you&apos;re proud to drop in your bio — one place brands and fans can find everything that matters.
+                  <strong>The outcome:</strong> A site you&apos;re proud to drop in your bio: one place brands and fans can find everything that matters.
                 </p>
               </div>
 
@@ -109,12 +109,12 @@ export default function Services() {
               </span>
               <h2 className="text-3xl font-bold text-neutral-900 mb-3">Small business websites</h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                A modern, professional web presence for small businesses that need to look the part online — built fast, ready to run from day one.
+                A modern, professional web presence for small businesses that need to look the part online. Built fast, ready to run from day one.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">Who it&apos;s for</h3>
               <p className="text-neutral-700 mb-6 leading-relaxed">
-                Small businesses doing good work but losing leads to a dated website, a template they can&apos;t edit, or no site at all. You want something clean, professional, and yours — without the agency price tag.
+                Small businesses doing good work but losing leads to a dated website, a template they can&apos;t edit, or no site at all. You want something clean, professional, and yours, without the agency price tag.
               </p>
 
               <h3 className="text-sm uppercase tracking-wide text-neutral-500 font-semibold mb-3">What&apos;s included</h3>
@@ -153,13 +153,13 @@ export default function Services() {
                   <svg className="w-5 h-5 text-primary-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-neutral-700">Fixed scope, fixed price — no surprise invoices</span>
+                  <span className="text-neutral-700">Fixed scope, fixed price, no surprise invoices</span>
                 </li>
               </ul>
 
               <div className="bg-primary-50 p-4 rounded-lg mb-6">
                 <p className="text-primary-800 font-medium">
-                  <strong>The outcome:</strong> A modern, professional site you&apos;re proud to send customers to — and that actually pulls its weight in bringing them in.
+                  <strong>The outcome:</strong> A modern, professional site you&apos;re proud to send customers to, and that actually pulls its weight in bringing them in.
                 </p>
               </div>
 
@@ -171,7 +171,7 @@ export default function Services() {
         </Container>
       </Section>
 
-      {/* Additional Services — Automation */}
+      {/* Additional Services: Automation */}
       <Section className="py-20">
         <Container>
           <div className="max-w-4xl mx-auto">
@@ -188,7 +188,7 @@ export default function Services() {
                 Custom workflow automations
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Once your site is live, I can help streamline the operations behind it — connecting the tools you already use, taking repetitive tasks off your plate, and freeing up hours each week. It&apos;s a capability I offer to existing clients, not the headline. If you have a specific bottleneck in mind, mention it when we talk and we&apos;ll figure out whether it&apos;s worth tackling.
+                Once your site is live, I can help streamline the operations behind it: connecting the tools you already use, taking repetitive tasks off your plate, and freeing up hours each week. It&apos;s a capability I offer to existing clients, not the headline. If you have a specific bottleneck in mind, mention it when we talk and we&apos;ll figure out whether it&apos;s worth tackling.
               </p>
             </Card>
           </div>

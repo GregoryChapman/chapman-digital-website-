@@ -21,7 +21,7 @@ export default function Contact() {
               Let&apos;s build <span className="text-gradient">something.</span>
             </h1>
             <p className="text-xl text-neutral-700 leading-relaxed">
-              Tell me a bit about your project — a creator site, a small business site, or something else you have in mind. I&apos;ll come back with a realistic scope and price, usually within a day.
+              Tell me a bit about your project: a creator site, a small business site, or something else you have in mind. I&apos;ll come back with a realistic scope and price, usually within a day.
             </p>
           </div>
         </Container>
@@ -36,7 +36,7 @@ export default function Contact() {
                 Send me a note
               </h2>
               <p className="text-lg text-neutral-700">
-                A couple of sentences is plenty. I read every message and reply personally — usually within 24 hours.
+                A couple of sentences is plenty. I read every message and reply personally, usually within 24 hours.
               </p>
             </div>
             
@@ -77,7 +77,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Location</h3>
-              <p className="text-neutral-600">Toronto, ON</p>
+              <p className="text-neutral-600">Montreal, QC</p>
             </div>
           </div>
         </Container>

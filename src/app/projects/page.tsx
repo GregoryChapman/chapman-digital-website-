@@ -69,13 +69,13 @@ export default function Projects() {
                   </h3>
                   <div className="space-y-3 text-neutral-700 leading-relaxed mb-6">
                     <p>
-                      <strong>The brief:</strong> Bella needed a single source of truth for her brand — somewhere brand partners could meet her work, see who she is, and reach out, without bouncing between scattered platforms or a basic link tree.
+                      <strong>The brief:</strong> Bella needed a single source of truth for her brand: somewhere brand partners could meet her work, see who she is, and reach out, without bouncing between scattered platforms or a basic link tree.
                     </p>
                     <p>
                       <strong>What I built:</strong> A clean, mobile-first creator site that doubles as a portfolio and media kit. One professional home for everything that matters.
                     </p>
                     <p>
-                      <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners — replacing a Linktree with something that actually represents the brand.
+                      <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners, replacing a Linktree with something that actually represents the brand.
                     </p>
                   </div>
                   <TrackedLink
@@ -120,7 +120,7 @@ export default function Projects() {
               Have something in mind?
             </h2>
             <p className="text-xl text-neutral-700 mb-8">
-              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price — usually within a day.
+              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price, usually within a day.
             </p>
             <Button href="/contact" variant="primary" size="lg">
               Let&apos;s build something

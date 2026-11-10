@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[#D6E1EB] mb-4 max-w-md">
-              Modern websites for creators and small businesses. Live in weeks, not months — fixed scope, fixed price, professional quality at small-business prices.
+              Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[#C3D2DF] hover:text-[#EAF3F8] transition-colors">
