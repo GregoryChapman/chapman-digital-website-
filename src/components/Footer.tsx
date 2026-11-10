@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-[#F2F6FA]">Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4 text-[#F2F6FA]">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-[#D6E1EB] hover:text-[#EAF3F8] transition-colors">
