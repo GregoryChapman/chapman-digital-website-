@@ -1,13 +1,13 @@
-"use client";
-
-import { track } from "@vercel/analytics";
 import Container from "@/components/Container";
+import TrackedLink from "@/components/TrackedLink";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
+import StructuredData from "@/components/StructuredData";
 
 export default function Home() {
   return (
     <>
+      <StructuredData />
       {/* Hero Section */}
       <Section className="py-16 md:py-[4.5rem] relative overflow-hidden">
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0B1F33] to-[#162636]" />
@@ -21,10 +21,10 @@ export default function Home() {
               Live in weeks, not months. Fixed scope, fixed price, fast turnaround.
             </p>
             <p className="text-lg text-[#E4ECF3] mb-8 leading-relaxed">
-              I build clean, professional sites for small creators and small businesses — the kind of quality bigger players pay agencies five figures for, at prices that actually work for the rest of us.
+              I build clean, professional sites for small creators and small businesses: the kind of quality bigger players pay agencies five figures for, at prices that actually work for the rest of us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200">
+              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200">
                 Let&apos;s build something
               </a>
               <a href="/projects" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-transparent border border-[#E4F2F8] hover:bg-white/16 rounded-lg transition-colors duration-200">
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-neutral-900 mb-4">What I build</h2>
             <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
-              Two focused offerings — both built for people who want professional quality without the agency price tag or the agency timeline.
+              Two focused offerings, both built for people who want professional quality without the agency price tag or the agency timeline.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
                 Creator sites
               </h3>
               <p className="text-neutral-700 mb-5 leading-relaxed">
-                Personal brand websites for influencers, content creators, and public figures. A real online home for your portfolio, media kit, and brand collaborations — built fast, fixed scope, fixed price.
+                Personal brand websites for influencers, content creators, and public figures. A real online home for your portfolio, media kit, and brand collaborations. Built fast, fixed scope, fixed price.
               </p>
               <ul className="space-y-2 text-neutral-700 mb-6 list-disc list-inside marker:text-primary-500">
                 <li>Mobile-first design that looks sharp everywhere</li>
@@ -73,7 +73,7 @@ export default function Home() {
                 Small business websites
               </h3>
               <p className="text-neutral-700 mb-5 leading-relaxed">
-                A modern web presence for small businesses that need to look professional online. Fast delivery, mobile-first, contact forms, an SEO baseline — ready to run from day one.
+                A modern web presence for small businesses that need to look professional online. Fast delivery, mobile-first, contact forms, an SEO baseline, ready to run from day one.
               </p>
               <ul className="space-y-2 text-neutral-700 mb-6 list-disc list-inside marker:text-secondary-500">
                 <li>Clean, conversion-friendly design</li>
@@ -144,22 +144,23 @@ export default function Home() {
                     A professional home for a growing creator brand
                   </h3>
                   <p className="text-neutral-700 leading-relaxed mb-4">
-                    Bella needed one place that captured her brand end-to-end — a single source of truth for brand collaborations, replacing scattered links and a basic Linktree with a polished, mobile-first creator site that doubles as a portfolio and media kit.
+                    Bella needed one place that captured her brand end-to-end: a single source of truth for brand collaborations, replacing scattered links and a basic Linktree with a polished, mobile-first creator site that doubles as a portfolio and media kit.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     <span className="px-2 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded">Creator site</span>
                     <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">Portfolio</span>
                     <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">Brand partnerships</span>
                   </div>
-                  <a
+                  <TrackedLink
                     href="https://bellalamanna.ca"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => track("portfolio_click", { project: "bellalamanna" })}
+                    event="portfolio_click"
+                    eventData={{ project: "bellalamanna" }}
                     className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors"
                   >
                     Visit bellalamanna.ca →
-                  </a>
+                  </TrackedLink>
                 </div>
               </div>
             </Card>
@@ -175,9 +176,9 @@ export default function Home() {
               Have something in mind?
             </h2>
             <p className="text-lg text-[#E4ECF3] mb-8 leading-relaxed">
-              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price — usually within a day.
+              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price, usually within a day.
             </p>
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white">
+            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white">
               Let&apos;s build something
             </a>
           </div>

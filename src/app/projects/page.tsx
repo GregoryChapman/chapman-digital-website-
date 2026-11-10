@@ -1,10 +1,16 @@
-"use client";
-
-import { track } from "@vercel/analytics";
 import Container from "@/components/Container";
+import TrackedLink from "@/components/TrackedLink";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Recent work",
+  description:
+    "Recent websites built by Chapman Digital Services for creators and small businesses, with links to the live sites.",
+  path: "/projects",
+});
 
 export default function Projects() {
   return (
@@ -63,24 +69,25 @@ export default function Projects() {
                   </h3>
                   <div className="space-y-3 text-neutral-700 leading-relaxed mb-6">
                     <p>
-                      <strong>The brief:</strong> Bella needed a single source of truth for her brand — somewhere brand partners could meet her work, see who she is, and reach out, without bouncing between scattered platforms or a basic link tree.
+                      <strong>The brief:</strong> Bella needed a single source of truth for her brand: somewhere brand partners could meet her work, see who she is, and reach out, without bouncing between scattered platforms or a basic link tree.
                     </p>
                     <p>
                       <strong>What I built:</strong> A clean, mobile-first creator site that doubles as a portfolio and media kit. One professional home for everything that matters.
                     </p>
                     <p>
-                      <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners — replacing a Linktree with something that actually represents the brand.
+                      <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners, replacing a Linktree with something that actually represents the brand.
                     </p>
                   </div>
-                  <a
+                  <TrackedLink
                     href="https://bellalamanna.ca"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => track("portfolio_click", { project: "bellalamanna" })}
-                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
+                    event="portfolio_click"
+                    eventData={{ project: "bellalamanna" }}
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
                   >
                     Visit bellalamanna.ca →
-                  </a>
+                  </TrackedLink>
                 </div>
               </div>
             </Card>
@@ -113,7 +120,7 @@ export default function Projects() {
               Have something in mind?
             </h2>
             <p className="text-xl text-neutral-700 mb-8">
-              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price — usually within a day.
+              Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price, usually within a day.
             </p>
             <Button href="/contact" variant="primary" size="lg">
               Let&apos;s build something
