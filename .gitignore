@@ -10,12 +10,9 @@ out/
 build/
 dist/
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Environment variables (any .env file, including copies like ".env 2.local")
+.env*
+!.env.example
 
 # IDE
 .vscode/
@@ -29,6 +26,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# TypeScript incremental build info
+*.tsbuildinfo
 
 # Runtime data
 pids
