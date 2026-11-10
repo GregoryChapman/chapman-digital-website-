@@ -171,7 +171,7 @@ export default function Services() {
         </Container>
       </Section>
 
-      {/* Additional Services: Automation */}
+      {/* Additional services: automation add-on */}
       <Section className="py-20">
         <Container>
           <div className="max-w-4xl mx-auto">
@@ -185,10 +185,10 @@ export default function Services() {
             </div>
             <Card className="border-l-4 border-l-neutral-700">
               <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                Custom workflow automations
+                Behind-the-scenes automation
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Once your site is live, I can help streamline the operations behind it: connecting the tools you already use, taking repetitive tasks off your plate, and freeing up hours each week. It&apos;s a capability I offer to existing clients, not the headline. If you have a specific bottleneck in mind, mention it when we talk and we&apos;ll figure out whether it&apos;s worth tackling.
+                Once your site is live, I can take repetitive work off your plate: sending brand inquiries straight into a tracker you&apos;ll actually check, keeping your media kit numbers current, or connecting the tools you already use. It&apos;s an add-on for existing clients, not the headline. If something eats hours of your week, mention it when we talk.
               </p>
             </Card>
           </div>

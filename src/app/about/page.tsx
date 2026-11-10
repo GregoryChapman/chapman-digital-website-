@@ -38,10 +38,10 @@ export default function About() {
               </h2>
               <div className="space-y-5 text-lg text-neutral-700 leading-relaxed">
                 <p>
-                  I spent 3+ years as a solutions engineer in the public sector, running enterprise demos and accelerators, designing systems for organizations where mistakes are expensive and the bar is high. Along the way I picked up six Salesforce certifications and a real feel for what enterprise-grade quality actually looks like.
+                  For the last four years I&apos;ve been a senior solutions engineer, building working software for large public-sector organizations on tight deadlines, including AI agents that have to hold up in front of a room of decision-makers. Along the way I picked up six Salesforce certifications, two of them in AI.
                 </p>
                 <p>
-                  I use modern tools (yes, including AI) to ship faster than traditional agencies. That&apos;s how I keep prices accessible for clients who aren&apos;t enterprise. The tools are the means. The work is the point.
+                  That&apos;s the bar I bring to smaller clients: careful work, delivered fast, that does what it says. It&apos;s also how I keep prices accessible. The tools are the means. The work is the point.
                 </p>
                 <p>
                   I started Chapman Digital Services because the quality bar bigger companies expect shouldn&apos;t be locked behind agency retainers. Smaller creators and small businesses deserve the same craft, without paying enterprise rates or waiting in a months-long queue to get it.
