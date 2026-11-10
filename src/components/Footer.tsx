@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,13 +9,12 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-4">
-              <img
+              <Image
                 src="/images/chapman-digital-logo-white.png"
                 alt="Chapman Digital Services"
-                width={200}
+                width={131}
                 height={56}
-                className="h-14 w-auto"
-                style={{ display: 'block' }}
+                className="block h-14 w-auto"
               />
             </Link>
             <p className="text-[#D6E1EB] mb-4 max-w-md">
