@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const site = {
   name: "Chapman Digital Services",
-  url: "https://chapmandigitalservices.com",
+  url: "https://www.chapmandigitalservices.com",
   tagline: "Modern websites for creators and small businesses.",
   description:
     "Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.",
