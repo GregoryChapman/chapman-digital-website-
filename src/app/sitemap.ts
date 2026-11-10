@@ -8,6 +8,7 @@ const routes: { path: string; priority: number; changeFrequency: "monthly" | "ye
   { path: "/about", priority: 0.7, changeFrequency: "yearly" },
   { path: "/contact", priority: 0.7, changeFrequency: "yearly" },
   { path: "/blog", priority: 0.4, changeFrequency: "monthly" },
+  { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
