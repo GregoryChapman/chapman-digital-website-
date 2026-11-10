@@ -13,7 +13,7 @@ const structuredData = {
       name: site.name,
       url: site.url,
       description: site.description,
-      logo: `${site.url}/images/chapman-digital-logo.png`,
+      logo: `${site.url}/icon-512.png`,
       image: `${site.url}/opengraph-image`,
       email: site.email,
       founder: { "@type": "Person", name: "Gregory Chapman" },
