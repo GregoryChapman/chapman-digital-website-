@@ -84,7 +84,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     event="portfolio_click"
                     eventData={{ project: "bellalamanna" }}
-                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
                   >
                     Visit bellalamanna.ca →
                   </TrackedLink>

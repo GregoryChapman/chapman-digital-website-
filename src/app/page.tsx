@@ -24,7 +24,7 @@ export default function Home() {
               I build clean, professional sites for small creators and small businesses: the kind of quality bigger players pay agencies five figures for, at prices that actually work for the rest of us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200">
+              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200">
                 Let&apos;s build something
               </a>
               <a href="/projects" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-transparent border border-[#E4F2F8] hover:bg-white/16 rounded-lg transition-colors duration-200">
@@ -178,7 +178,7 @@ export default function Home() {
             <p className="text-lg text-[#E4ECF3] mb-8 leading-relaxed">
               Tell me what you&apos;re trying to build. I&apos;ll come back with a realistic scope, timeline, and price, usually within a day.
             </p>
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white">
+            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-[#0B1F33] bg-[#5BA8BD] hover:bg-[#77ACBE] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.18)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white">
               Let&apos;s build something
             </a>
           </div>
