@@ -1,13 +1,18 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
+import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/site";
 
-export const metadata = pageMetadata({
-  title: "Perspectives",
-  description:
-    "Notes from building modern websites for creators and small businesses: the craft, the work, and what I'm learning along the way.",
-  path: "/blog",
-});
+// Kept out of search results until the first post is published.
+export const metadata: Metadata = {
+  ...pageMetadata({
+    title: "Perspectives",
+    description:
+      "Notes from building modern websites for creators and small businesses: the craft, the work, and what I'm learning along the way.",
+    path: "/blog",
+  }),
+  robots: { index: false, follow: true },
+};
 
 export default function Blog() {
   return (
@@ -31,38 +36,16 @@ export default function Blog() {
         <Container>
           <div className="text-center max-w-2xl mx-auto">
             <div className="w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-8">
-              <svg className="w-12 h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.586-7.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
               </svg>
             </div>
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
               Writing soon
             </h2>
-            <p className="text-lg text-neutral-700 mb-8">
-              First posts are in the works: short, honest pieces from a one-person shop building modern websites for small clients. Drop your email if you want me to send them when they go live.
+            <p className="text-lg text-neutral-700">
+              First posts are in the works: short, honest pieces from a one-person shop building modern websites for small clients.
             </p>
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-neutral-200">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">
-                Get notified
-              </h3>
-              <p className="text-neutral-700 mb-4">
-                No spam, no newsletter-industrial-complex. Just an email when something new is up.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <label htmlFor="notify-email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="notify-email"
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                />
-                <button className="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-lg transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
         </Container>
       </Section>
