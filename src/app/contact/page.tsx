@@ -56,7 +56,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">Email</h3>
-              <p className="text-neutral-600">gregory.chapman@chapmandigitalservices.com</p>
+              <p className="text-neutral-600 wrap-anywhere">gregory.chapman@chapmandigitalservices.com</p>
             </div>
 
             <div className="text-center">
