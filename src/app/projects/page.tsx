@@ -1,10 +1,16 @@
-"use client";
-
-import { track } from "@vercel/analytics";
 import Container from "@/components/Container";
+import TrackedLink from "@/components/TrackedLink";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Recent work",
+  description:
+    "Recent websites built by Chapman Digital Services for creators and small businesses, with links to the live sites.",
+  path: "/projects",
+});
 
 export default function Projects() {
   return (
@@ -72,15 +78,16 @@ export default function Projects() {
                       <strong>The outcome:</strong> A polished destination Bella can confidently link in her bio, in pitch emails, and in conversations with brand partners — replacing a Linktree with something that actually represents the brand.
                     </p>
                   </div>
-                  <a
+                  <TrackedLink
                     href="https://bellalamanna.ca"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => track("portfolio_click", { project: "bellalamanna" })}
+                    event="portfolio_click"
+                    eventData={{ project: "bellalamanna" }}
                     className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5BA8BD] hover:bg-[#4A90A4] rounded-lg shadow-[0_6px_18px_rgba(8,21,34,0.16)] transition-colors duration-200"
                   >
                     Visit bellalamanna.ca →
-                  </a>
+                  </TrackedLink>
                 </div>
               </div>
             </Card>

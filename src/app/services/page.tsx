@@ -2,6 +2,14 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Services",
+  description:
+    "Creator sites and small business websites. Mobile-first, fast, search-ready. Fixed scope, fixed price, live in weeks, not months.",
+  path: "/services",
+});
 
 export default function Services() {
   return (

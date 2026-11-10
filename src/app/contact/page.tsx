@@ -1,6 +1,14 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
 import ContactFormAPI from "@/components/ContactFormAPI";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Contact",
+  description:
+    "Tell me what you're building. I'll come back with a realistic scope, timeline and price, usually within a day.",
+  path: "/contact",
+});
 
 export default function Contact() {
   return (

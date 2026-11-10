@@ -1,5 +1,13 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Perspectives",
+  description:
+    "Notes from building modern websites for creators and small businesses: the craft, the work, and what I'm learning along the way.",
+  path: "/blog",
+});
 
 export default function Blog() {
   return (

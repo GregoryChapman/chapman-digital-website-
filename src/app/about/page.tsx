@@ -2,6 +2,14 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "About",
+  description:
+    "Greg Chapman builds modern websites for creators and small businesses. Based in Montreal, working across Canada. Fixed scope, fixed price.",
+  path: "/about",
+});
 
 export default function About() {
   return (

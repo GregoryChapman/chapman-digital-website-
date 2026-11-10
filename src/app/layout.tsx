@@ -4,22 +4,31 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Chapman Digital Services — Modern websites for creators and small businesses",
-  description: "Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.",
-  keywords: ["creator website", "personal brand site", "small business website", "web developer", "Toronto web developer"],
-  authors: [{ name: "Chapman Digital Services" }],
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} | Modern websites for creators and small businesses`,
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
+  keywords: ["creator website", "personal brand site", "small business website", "web developer", "Montreal web developer", "Canada web design"],
+  authors: [{ name: "Gregory Chapman" }],
+  creator: "Gregory Chapman",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Chapman Digital Services — Modern websites for creators and small businesses",
-    description: "Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.",
+    title: `${site.name} | Modern websites for creators and small businesses`,
+    description: site.description,
+    url: "/",
+    siteName: site.name,
     type: "website",
-    locale: "en_US",
+    locale: site.locale,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chapman Digital Services — Modern websites for creators and small businesses",
-    description: "Modern websites for creators and small businesses. Live in weeks, not months. Fixed scope, fixed price, professional quality at small-business prices.",
+    title: `${site.name} | Modern websites for creators and small businesses`,
+    description: site.description,
   },
 };
 
@@ -29,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-CA">
       <body className="antialiased">
         <Header />
         <main>{children}</main>

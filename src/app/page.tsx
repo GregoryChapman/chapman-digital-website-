@@ -1,7 +1,5 @@
-"use client";
-
-import { track } from "@vercel/analytics";
 import Container from "@/components/Container";
+import TrackedLink from "@/components/TrackedLink";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 
@@ -151,15 +149,16 @@ export default function Home() {
                     <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">Portfolio</span>
                     <span className="px-2 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded">Brand partnerships</span>
                   </div>
-                  <a
+                  <TrackedLink
                     href="https://bellalamanna.ca"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => track("portfolio_click", { project: "bellalamanna" })}
+                    event="portfolio_click"
+                    eventData={{ project: "bellalamanna" }}
                     className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors"
                   >
                     Visit bellalamanna.ca →
-                  </a>
+                  </TrackedLink>
                 </div>
               </div>
             </Card>
